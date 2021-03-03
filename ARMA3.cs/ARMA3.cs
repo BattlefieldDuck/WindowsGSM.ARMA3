@@ -14,10 +14,10 @@ namespace WindowsGSM.Plugins
         public Plugin Plugin = new Plugin
         {
             name = "WindowsGSM.ARMA3_x64", // WindowsGSM.XXXX
-            author = "BattlefieldDuck & Mildly_Interested",
+            author = "BattlefieldDuck",
             description = "🧩 WindowsGSM plugin for supporting Arma 3 Dedicated Server 64bit",
             version = "1.0",
-            url = "https://github.com/MildlyInterested/WindowsGSM.ARMA3", // Github repository link (Best practice)
+            url = "https://github.com/BattlefieldDuck/WindowsGSM.ARMA3", // Github repository link (Best practice)
             color = "#9eff99" // Color Hex
         };
 
@@ -57,7 +57,7 @@ namespace WindowsGSM.Plugins
         {
             // Prepare start parameter
             var param = new StringBuilder();
-            //param.Append(string.IsNullOrWhiteSpace(_serverData.ServerPort) ? string.Empty : $" -port={_serverData.ServerPort}");
+            param.Append(string.IsNullOrWhiteSpace(_serverData.ServerPort) ? string.Empty : $" -port={_serverData.ServerPort}");
             //param.Append(string.IsNullOrWhiteSpace(_serverData.ServerName) ? string.Empty : $" -name=\"{_serverData.ServerName}\"");
             param.Append(string.IsNullOrWhiteSpace(_serverData.ServerParam) ? string.Empty : $" {_serverData.ServerParam}");
  
