@@ -36,7 +36,7 @@ namespace WindowsGSM.Plugins
         public override string StartPath => "arma3server_x64.exe"; // Game server start path, for ARMA3, it is arma3server_x64.exe
         public string FullName = "Arma 3 Dedicated Server x64"; // Game server FullName
         public bool AllowsEmbedConsole = false;  // Does this server support output redirect?
-        public int PortIncrements = 100; // This tells WindowsGSM how many ports should skip after installation
+        public int PortIncrements = 2; // This tells WindowsGSM how many ports should skip after installation
         public object QueryMethod = new A2S(); // Query method should be use on current server type. Accepted value: null or new A2S() or new FIVEM() or new UT3()
 
 
