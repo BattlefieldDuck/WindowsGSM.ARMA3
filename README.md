@@ -1,3 +1,8 @@
+# Changed Launch Parameter to x64 bit Version of Arma3
+If you want to change it to perfomance branch edit the following line to the correct .exe:
+
+https://github.com/MildlyInterested/WindowsGSM.ARMA3/blob/master/ARMA3.cs/ARMA3_x64.cs#L36
+
 # WindowsGSM.ARMA3
 🧩 WindowsGSM plugin for supporting Arma 3 Dedicated Server 
 
