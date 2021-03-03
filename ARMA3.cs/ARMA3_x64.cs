@@ -13,11 +13,11 @@ namespace WindowsGSM.Plugins
         // - Plugin Details
         public Plugin Plugin = new Plugin
         {
-            name = "WindowsGSM.ARMA3", // WindowsGSM.XXXX
-            author = "BattlefieldDuck",
-            description = "🧩 WindowsGSM plugin for supporting Arma 3 Dedicated Server",
+            name = "WindowsGSM.ARMA3_x64", // WindowsGSM.XXXX
+            author = "BattlefieldDuck & Mildly_Interested",
+            description = "🧩 WindowsGSM plugin for supporting Arma 3 Dedicated Server 64bit",
             version = "1.0",
-            url = "https://github.com/BattlefieldDuck/WindowsGSM.ARMA3", // Github repository link (Best practice)
+            url = "https://github.com/MildlyInterested/WindowsGSM.ARMA3", // Github repository link (Best practice)
             color = "#9eff99" // Color Hex
         };
 
@@ -33,10 +33,10 @@ namespace WindowsGSM.Plugins
 
 
         // - Game server Fixed variables
-        public override string StartPath => "arma3server.exe"; // Game server start path, for ARMA3, it is arma3server.exe
+        public override string StartPath => "arma3server_x64.exe"; // Game server start path, for ARMA3, it is arma3server_x64.exe
         public string FullName = "Arma 3 Dedicated Server"; // Game server FullName
         public bool AllowsEmbedConsole = false;  // Does this server support output redirect?
-        public int PortIncrements = 2; // This tells WindowsGSM how many ports should skip after installation
+        public int PortIncrements = 100; // This tells WindowsGSM how many ports should skip after installation
         public object QueryMethod = new A2S(); // Query method should be use on current server type. Accepted value: null or new A2S() or new FIVEM() or new UT3()
 
 
