@@ -28,7 +28,7 @@ namespace WindowsGSM.Plugins
 
 
         // - Settings properties for SteamCMD installer
-        public override bool loginAnonymous => true; // ARMA3 DOES NOT require to login steam account to install the server, so loginAnonymous = true
+        public override bool loginAnonymous => false; // ARMA3 DOES require to login steam account to install the server, so loginAnonymous = false
         public override string AppId => "233780"; // Game server appId, ARMA3 is 233780
 
 
