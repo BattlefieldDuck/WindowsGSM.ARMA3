@@ -13,9 +13,9 @@ namespace WindowsGSM.Plugins
         // - Plugin Details
         public Plugin Plugin = new Plugin
         {
-            name = "WindowsGSM.ARMA3", // WindowsGSM.XXXX
+            name = "WindowsGSM.ARMA3_x64", // WindowsGSM.XXXX
             author = "BattlefieldDuck",
-            description = "🧩 WindowsGSM plugin for supporting Arma 3 Dedicated Server",
+            description = "🧩 WindowsGSM plugin for supporting Arma 3 Dedicated Server 64bit",
             version = "1.0",
             url = "https://github.com/BattlefieldDuck/WindowsGSM.ARMA3", // Github repository link (Best practice)
             color = "#9eff99" // Color Hex
@@ -28,13 +28,13 @@ namespace WindowsGSM.Plugins
 
 
         // - Settings properties for SteamCMD installer
-        public override bool loginAnonymous => false; // ARMA3 requires to login steam account to install the server, so loginAnonymous = false
+        public override bool loginAnonymous => false; // ARMA3 DOES require to login steam account to install the server, so loginAnonymous = false
         public override string AppId => "233780"; // Game server appId, ARMA3 is 233780
 
 
         // - Game server Fixed variables
-        public override string StartPath => "arma3server.exe"; // Game server start path, for ARMA3, it is arma3server.exe
-        public string FullName = "Arma 3 Dedicated Server"; // Game server FullName
+        public override string StartPath => "arma3server_x64.exe"; // Game server start path, for ARMA3, it is arma3server_x64.exe
+        public string FullName = "Arma 3 Dedicated Server x64"; // Game server FullName
         public bool AllowsEmbedConsole = false;  // Does this server support output redirect?
         public int PortIncrements = 2; // This tells WindowsGSM how many ports should skip after installation
         public object QueryMethod = new A2S(); // Query method should be use on current server type. Accepted value: null or new A2S() or new FIVEM() or new UT3()
